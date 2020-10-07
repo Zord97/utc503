@@ -13,6 +13,7 @@ $licenses=loadAndDump(DATA_LOCATION."licenses.json");
 
 arrayDump(getEmployeesByService($employees,'compta'),'Liste des employés de la compta');
 
+//Test where
 
 
-
+arrayDump(where($employees, "service", "dsi"), 'Liste DSI');
