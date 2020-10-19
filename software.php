@@ -17,3 +17,9 @@ arrayDump(getEmployeesByService($employees,'compta'),'Liste des employés de la 
 
 
 arrayDump(where($employees, "service", "dsi"), 'Liste DSI');
+
+//Test select
+arrayDump(select($licenses, ["name", "count"]), 'Nombre de licences');
+
+//Test selectwhere
+arrayDump(selectWhere($licenses, ["name"], ["count", 0]), 'Softs avec 0 licences');
